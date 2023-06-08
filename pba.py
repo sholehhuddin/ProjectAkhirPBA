@@ -69,7 +69,7 @@ def label_tweet(tweet):
 tknzr = TweetTokenizer()
 
 # Preprocess data
-@st.cache_data()
+@st.cache
 def preprocess_data_cached(df):
     return preprocess_data(df)
 
